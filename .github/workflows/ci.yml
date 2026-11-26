@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  lint-and-tests:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: System libraries for gmsh
+        run: sudo apt-get update && sudo apt-get install -y libglu1-mesa libxcursor1 libxft2 libxinerama1 libgomp1
+      - name: Install
+        # CPU-only PyTorch; the graph-network stack (PyTorch Geometric, PhysicsNeMo) is not needed by the tests
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install "turboai @ git+https://github.com/ignaciofuertecarrasco/TurboAI"
+          pip install --no-deps "turboai-shape-ml @ git+https://github.com/ignaciofuertecarrasco/turboai-shape-ml"
+          pip install --no-deps -e .
+          pip install pytest ruff "scikit-learn==1.9.1"   # version the committed models were saved with
+      - name: Lint
+        run: ruff check .
+      - name: Tests
+        run: pytest -q
