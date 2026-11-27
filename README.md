@@ -12,8 +12,8 @@
 </p>
 
 <p align="center">
-  <sub>Part of <a href="https://ignaciofuertecarrasco.github.io/cax-portfolio/"><b>One turbine vane, the whole CAX chain</b></a>: eight small open-source projects around one public turbine benchmark</sub><br>
-  <sub><a href="https://github.com/ignaciofuertecarrasco/TurboAI">CFD</a> · <a href="https://github.com/ignaciofuertecarrasco/openfoam-viscous-work">viscous work</a> · <a href="https://github.com/ignaciofuertecarrasco/turboai-surrogates">surrogates</a> · <a href="https://github.com/ignaciofuertecarrasco/turboai-shape-ml">shape ML</a> · <b>damage</b> · <a href="https://github.com/ignaciofuertecarrasco/turboai-agent">agent</a> · <a href="https://github.com/ignaciofuertecarrasco/vane-thermomech">CAD → FEA → CAM</a> · <a href="https://github.com/ignaciofuertecarrasco/cax-components">components</a></sub>
+  <sub>Part of <a href="https://ignaciofuertecarrasco.github.io/cax-portfolio/"><b>One turbine vane, the whole CAX chain</b></a>: nine small open-source projects around one public turbine benchmark</sub><br>
+  <sub><a href="https://github.com/ignaciofuertecarrasco/TurboAI">CFD</a> · <a href="https://github.com/ignaciofuertecarrasco/openfoam-viscous-work">viscous work</a> · <a href="https://github.com/ignaciofuertecarrasco/turboai-surrogates">surrogates</a> · <a href="https://github.com/ignaciofuertecarrasco/turboai-shape-ml">shape ML</a> · <b>damage</b> · <a href="https://github.com/ignaciofuertecarrasco/turboai-agent">agent</a> · <a href="https://github.com/ignaciofuertecarrasco/vane-thermomech">CAD → FEA → CAM</a> · <a href="https://github.com/ignaciofuertecarrasco/cax-components">components</a> · <a href="https://github.com/ignaciofuertecarrasco/vane-incidence">incidence</a></sub>
 </p>
 <!-- header:end -->
 
@@ -118,6 +118,7 @@ the surface length; amplitude as a fraction of the axial chord (0.006 × 67.5 mm
 | 6 | [turboai-agent](https://github.com/ignaciofuertecarrasco/turboai-agent) | The toolbox as typed tools for an LLM agent (MCP) |
 | 7 | [vane-thermomech](https://github.com/ignaciofuertecarrasco/vane-thermomech) | CAD → mesh → thermal, static and modal FEA of the cooled vane, CAM, ML data set |
 | 8 | [cax-components](https://github.com/ignaciofuertecarrasco/cax-components) | CFD, FEA and a differentiable surrogate as Tesseract components |
+| 9 | [vane-incidence](https://github.com/ignaciofuertecarrasco/vane-incidence) | What ±20° of off-design incidence does to loss, heat transfer and metal temperature |
 
 Overview page: https://ignaciofuertecarrasco.github.io/cax-portfolio/
 
